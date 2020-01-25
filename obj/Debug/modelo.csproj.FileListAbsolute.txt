@@ -1,0 +1,6 @@
+C:\Users\Blanca\Desktop\proyectos\Interfaz\Formulario\bin\Debug\Formulario.exe.config
+C:\Users\Blanca\Desktop\proyectos\Interfaz\Formulario\bin\Debug\Formulario.exe
+C:\Users\Blanca\Desktop\proyectos\Interfaz\Formulario\bin\Debug\Formulario.pdb
+C:\Users\Blanca\Desktop\proyectos\Interfaz\Formulario\obj\Debug\modelo.csprojAssemblyReference.cache
+C:\Users\Blanca\Desktop\proyectos\Interfaz\Formulario\obj\Debug\Formulario.exe
+C:\Users\Blanca\Desktop\proyectos\Interfaz\Formulario\obj\Debug\Formulario.pdb
