@@ -12,12 +12,12 @@ namespace Formulario
         private String lastName;
         private int age;
         private int semester;
-        private String career; 
+        private String career;
 
         public String Name { get; set; }
         public String LastName { get; set; }
-        public String Age { get; set; }
-        public String Semester { get; set; }
+        public int Age { get; set; }
+        public int Semester { get; set; }
         public String Career { get; set; }
 
     }
