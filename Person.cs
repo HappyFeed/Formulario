@@ -24,11 +24,39 @@ namespace Formulario
             this.semester = semester;
         }
 
-        public String Name { get; set; }
-        public String LastName { get; set; }
-        public int Age { get; set; }
-        public int Semester { get; set; }
-        public String Career { get; set; }
+        public String Name { get {
+                return name;
+            }
+            set { }
+        }
+        public String LastName {
+            get
+            {
+                return name;
+            }
+            set { }
+        }
+        public int Age {
+            get
+            {
+                return age;
+            }
+            set { }
+        }
+        public int Semester {
+            get
+            {
+                return semester;
+            }
+            set { }
+        }
+        public String Career {
+            get
+            {
+                return career;
+            }
+            set { }
+        }
 
         public void lectura()
         {
@@ -58,23 +86,5 @@ namespace Formulario
                 Console.WriteLine("Exception: " + e.Message);
             }
         }
-
-        public void escritura()
-        {
-            try
-            {
-
-                StreamWriter sw = new StreamWriter("..\\..\\ejemplo.txt", true);
-
-                sw.WriteLine(name + ";" + lastName + ";" + age + ";" + semester + ";" + career);
-
-                sw.Close();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Exception: " + e.Message);
-            }
-        }
-
     }
 }
