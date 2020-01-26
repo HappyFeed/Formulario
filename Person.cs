@@ -15,6 +15,15 @@ namespace Formulario
         private int semester;
         private String career;
 
+        public Person(String name, String lastName, String career, int age, int semester)
+        {
+            this.name = name;
+            this.lastName = lastName;
+            this.career = career;
+            this.age = age;
+            this.semester = semester;
+        }
+
         public String Name { get; set; }
         public String LastName { get; set; }
         public int Age { get; set; }
