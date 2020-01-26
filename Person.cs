@@ -32,7 +32,7 @@ namespace Formulario
         public String LastName {
             get
             {
-                return name;
+                return lastName;
             }
             set { }
         }
@@ -58,33 +58,5 @@ namespace Formulario
             set { }
         }
 
-        public void lectura()
-        {
-            String line;
-            try
-            {
-                StreamReader sr = new StreamReader("..\\..\\ejemplo.txt");
-
-                line = "";
-
-                while ((line = sr.ReadLine()) != null)
-                {
-                    String[] lines = sr.ReadLine().Split(';');
-                    name = lines[0];
-                    lastName = lines[1];
-                    age = Convert.ToInt32(lines[2]);
-                    semester = Convert.ToInt32(lines[3]);
-                    career = lines[4];
-
-                }
-
-                sr.Close();
-
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Exception: " + e.Message);
-            }
-        }
     }
 }
