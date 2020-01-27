@@ -15,56 +15,47 @@ namespace Formulario
         private int semester;
         private String career;
 
-        public String Name { get; set; }
-        public String LastName { get; set; }
-        public int Age { get; set; }
-        public int Semester { get; set; }
-        public String Career { get; set; }
-
-        public void lectura()
+        public Person(String name, String lastName, String career, int age, int semester)
         {
-            String line;
-            try
-            {
-                StreamReader sr = new StreamReader("..\\..\\ejemplo.txt");
-
-                line = "";
-
-                while ((line = sr.ReadLine()) != null)
-                {
-                    String[] lines = sr.ReadLine().Split(';');
-                    name = lines[0];
-                    lastName = lines[1];
-                    age = Convert.ToInt32(lines[2]);
-                    semester = Convert.ToInt32(lines[3]);
-                    career = lines[4];
-
-                }
-
-                sr.Close();
-
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Exception: " + e.Message);
-            }
+            this.name = name;
+            this.lastName = lastName;
+            this.career = career;
+            this.age = age;
+            this.semester = semester;
         }
 
-        public void escritura()
-        {
-            try
-            {
-
-                StreamWriter sw = new StreamWriter("..\\..\\ejemplo.txt", true);
-
-                sw.WriteLine(name + ";" + lastName + ";" + age + ";" + semester + ";" + career);
-
-                sw.Close();
+        public String Name { get {
+                return name;
             }
-            catch (Exception e)
+            set { }
+        }
+        public String LastName {
+            get
             {
-                Console.WriteLine("Exception: " + e.Message);
+                return lastName;
             }
+            set { }
+        }
+        public int Age {
+            get
+            {
+                return age;
+            }
+            set { }
+        }
+        public int Semester {
+            get
+            {
+                return semester;
+            }
+            set { }
+        }
+        public String Career {
+            get
+            {
+                return career;
+            }
+            set { }
         }
 
     }
